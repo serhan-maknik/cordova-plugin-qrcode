@@ -31,4 +31,17 @@
 </body>
 
 ```
+## javascript
+```js
+QrcodeReader.getQrCode({
+    wifiSetting:"type-wifi/ssid-maknik/password-1234/staticip-192.168.1.2"  // Example
+},function (imageData){
+    var image = document.getElementById('myImage');
+       image.src = "data:image/jpeg;base64," + imageData;
+},
 
+function (error){
+    console.log(error)
+}
+)
+```
