@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+    id="cordova-plugin-service" 
+    version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <name>QrcodeReader</name>
+    <js-module name="QrcodeReader" src="www/index.js">
+        <clobbers target="QrcodeReader"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="QrcodeReader">
+                <param name="android-package" value="cordova.qrcode.plugin.QrcodeReader"/>
+            </feature>
+        </config-file>
+        
+		<config-file target="AndroidManifest.xml" parent="/*">
+     
+		</config-file>
+        <source-file src="src/android/QrcodeReader.java" target-dir="src/cordova/qrcode/plugin/QrcodeReader" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference"/>
+    </platform>
+
+    
+</plugin>

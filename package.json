@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-service",
+  "version": "1.0.0",
+  "description": "Qrcode reader",
+  "cordova": {
+    "id": "cordova-plugin-service",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "author": "Serhan MAKNİK",
+  "license": "ISC"
+}

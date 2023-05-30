@@ -1,0 +1,3 @@
+dependencies {
+     implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+}
